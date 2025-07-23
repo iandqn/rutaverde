@@ -1,154 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="facebook-domain-verification" content="pyweoc66avcwod3dbfcgdgcpy57ipz" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ruta Verde Bicicletería</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f3fdf5;
-      color: #1b4332;
-    }
-    .container {
-      width: 85%;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    header {
-      background: #2d6a4f;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h2 {
-      color: #40916c;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    .contact-form {
-      background: #d8f3dc;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .contact-form label {
-      display: block;
-      margin-top: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 6px;
-      border: 1px solid #95d5b2;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      background: #1b4332;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      margin-top: 15px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .contact-form button:hover {
-      background: #081c15;
-    }
-    footer {
-      background: #2d6a4f;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      margin-top: 30px;
-    }
-    .legal {
-      font-size: 13px;
-      color: #446;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Win - Tu Destino de Diversión y Ganancias</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Estilos personalizados y de tema */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            /* Fondo degradado para simular la iluminación de la imagen */
+            background-image: 
+                radial-gradient(circle at 50% 100%, rgba(189, 43, 43, 0.4), transparent 50%),
+                linear-gradient(to top, #0a0a0a, #1a1a1a 70%);
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        /* Estilo para los títulos principales, usando la fuente Anton */
+        .font-anton {
+            font-family: 'Anton', sans-serif;
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        .main-container {
+            max-width: 450px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 120px; /* Espacio para el botón flotante de WhatsApp */
+        }
+
+        /* Estilo para el logo */
+        .logo-icon {
+            font-size: 3rem;
+            color: #facc15; /* Amarillo/Dorado */
+            text-shadow: 0 0 10px #facc15;
+        }
+        
+        /* Estilo para el botón de WhatsApp flotante */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .whatsapp-button:hover {
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-<header>
-  Ruta Verde Bicicletería
-</header>
+    <div class="main-container p-4">
+        <!-- SECCIÓN SUPERIOR: HEADER -->
+        <header class="text-center py-8">
+            <!-- Logo -->
+            <div class="flex justify-center items-center gap-2 mb-2">
+                <i class="fa-solid fa-crown logo-icon"></i>
+                <h1 class="font-anton text-5xl tracking-wider text-white" style="text-shadow: 0 0 8px rgba(255,255,255,0.3);">Ruta Win</h1>
+            </div>
+            <!-- Slogan -->
+            <p class="text-lg text-gray-300">Tu Destino de Diversión y Ganancias!</p>
+        </header>
 
-<div class="container">
+        <!-- SECCIÓN PRINCIPAL: CONTENIDO -->
+        <main class="text-center">
+            <!-- Título principal -->
+            <h2 class="font-anton text-6xl md:text-7xl leading-tight text-yellow-400 uppercase mb-8" style="text-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+                Una nueva<br>forma de jugar
+            </h2>
 
-  <section>
-    <h2>🚴 Sobre Nosotros</h2>
-    <p><strong>Ruta Verde Bicicletería S.R.L.</strong> es una empresa dedicada a la venta, reparación y mantenimiento de bicicletas urbanas, de montaña y eléctricas. Brindamos además accesorios, indumentaria y asesoramiento técnico para ciclistas de todos los niveles.</p>
-  </section>
+            <!-- Lista de beneficios -->
+            <ul class="space-y-4 text-left inline-block mx-auto text-xl mb-10">
+                <li class="flex items-center gap-4">
+                    <i class="fa-solid fa-coins fa-2x w-8 text-center text-yellow-500"></i>
+                    <span class="font-bold">GANÁ SEGURO</span>
+                </li>
+                <li class="flex items-center gap-4">
+                    <i class="fa-solid fa-gift fa-2x w-8 text-center text-red-500"></i>
+                    <span class="font-bold">PAGOS AL INSTANTE</span>
+                </li>
+                <li class="flex items-center gap-4">
+                    <i class="fa-solid fa-star fa-2x w-8 text-center text-blue-500"></i>
+                    <span class="font-bold">BONOS</span>
+                </li>
+                <li class="flex items-center gap-4">
+                    <i class="fa-solid fa-headset fa-2x w-8 text-center text-green-500"></i>
+                    <span class="font-bold">ATENCIÓN LAS 24 HORAS</span>
+                </li>
+            </ul>
 
-  <section>
-    <h2>📍 Dónde Estamos</h2>
-    <p>📌 Dirección: Av. San Martín 3298, Godoy Cruz, Mendoza, Argentina</p>
-    <p>📞 Teléfono: 11 4542-2398</p>
-  </section>
+            <!-- Botón de Registro -->
+            <a href="#" class="inline-block bg-yellow-400 text-gray-900 font-bold uppercase text-xl py-4 px-8 rounded-lg shadow-lg hover:bg-yellow-300 transition-colors duration-300 transform hover:scale-105">
+                Regístrate con el 50% de Bono
+            </a>
+        </main>
 
-  <section>
-    <h2>🛠️ Productos y Servicios</h2>
-    <ul>
-      <li>Bicicletas urbanas, mountain bike y eléctricas</li>
-      <li>Servicio técnico y mantenimiento</li>
-      <li>Venta de accesorios y repuestos</li>
-      <li>Indumentaria para ciclismo</li>
-      <li>Alquiler de bicicletas por día o semana</li>
-    </ul>
-  </section>
+        <!-- Espacio en blanco para que el contenido no quede detrás del botón de WhatsApp -->
+        <div></div>
+    </div>
 
-  <section class="contact-form">
-    <h2>📩 Contacto</h2>
-    <form>
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <section class="legal">
-    <h2>📝 Términos y Condiciones</h2>
-    <p><strong>1. Uso del Sitio:</strong> El uso del sitio implica la aceptación de nuestras condiciones. Nos reservamos el derecho de modificar los contenidos sin previo aviso.</p>
-    <p><strong>2. Propiedad Intelectual:</strong> Todos los contenidos son propiedad de Ruta Verde Bicicletería S.R.L.</p>
-    <p><strong>3. Responsabilidad:</strong> El usuario se compromete a utilizar el sitio de forma lícita y responsable.</p>
-    <p><strong>4. Enlaces:</strong> Podemos incluir enlaces a redes sociales o servicios externos sin asumir responsabilidad sobre ellos.</p>
-
-    <h2>🔒 Política de Privacidad</h2>
-    <p><strong>1. Datos Recopilados:</strong> Solo recopilamos datos personales mediante formularios de contacto.</p>
-    <p><strong>2. Finalidad:</strong> Utilizamos los datos para responder consultas o enviar información sobre nuestros servicios.</p>
-    <p><strong>3. Protección:</strong> Garantizamos medidas razonables para proteger tu información personal.</p>
-    <p><strong>4. Cookies:</strong> Este sitio puede usar cookies para mejorar tu experiencia.</p>
-  </section>
-
-</div>
-
-<footer>
-  © 2025 Ruta Verde Bicicletería | Todos los derechos reservados
-</footer>
+    <!-- BOTÓN DE WHATSAPP FLOTANTE -->
+    <footer class="whatsapp-button">
+        <!-- Reemplaza '1234567890' con tu número de WhatsApp real -->
+        <a href=https://wa.me/5491127412158?text=Hola%21%20Quiero%20m%C3%A1s%20informaci%C3%B3n.%20Mi%20nombre%20es%3A 
+           target="_blank" 
+           class="flex items-center justify-center gap-3 bg-green-500 text-white font-bold text-2xl w-full py-5 px-6 rounded-xl shadow-2xl">
+            <i class="fab fa-whatsapp text-4xl"></i>
+            <span>Reclamar BONO aquí</span>
+        </a>
+    </footer>
 
 </body>
 </html>
-
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Mensaj
